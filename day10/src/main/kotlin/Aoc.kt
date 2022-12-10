@@ -56,5 +56,5 @@ fun List<Operation>.runCPU(cycles: Int, print: Boolean = false): Int {
 fun solutionPart1(input: List<Operation>): Long = listOf(20, 60, 100, 140, 180, 220).sumOf { it * input.runCPU(it) }.toLong()
 
 fun solutionPart2(input: List<Operation>) {
-    input.runCPU(20000, true)
+    input.runCPU(20000, false)
 }
